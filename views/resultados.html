@@ -1,0 +1,115 @@
+<?php
+    if($_POST){
+        $p1 = $_POST['p1'];
+        $p2 = $_POST['p2'];
+        $p3 = $_POST['p3'];
+        $p4 = $_POST['p4'];
+        $p5 = $_POST['p5'];
+        $p6 = $_POST['p6'];
+        $p7 = $_POST['p7'];
+        $p8 = $_POST['p8'];
+    }else{
+        header("Location: encuesta.php");
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómputo en la nube</title>
+
+    <?php
+        include "partials/head.php"
+    ?>
+</head>
+<body>
+    <?php
+        include "partials/navbar.php"
+    ?>
+
+    <div class="container my-5 enuesta-container text-light">
+        <h1>Gracias por responder la encuesta</h1>
+        <div class="mb-3 mt-3">
+            <p>¿Has escuchado del término Cómputo en la nube?</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="p1" value="si" <?php if ($p1=="si") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio1">Si</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="p1" value="no" <?php if ($p1=="no") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio2">No</label>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <p>¿Conoce cuáles son los servicios que se ofrecen en Cloud Computing?</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="p2" value="si" <?php if ($p2=="si") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio1">Si</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="p2" value="no" <?php if ($p2=="no") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio2">No</label>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <p>¿Ha utilizado algún servicio en la nube?</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="p3" value="si" <?php if ($p3=="si") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio1">Si</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="p3" value="no" <?php if ($p3=="no") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio2">No</label>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <p>¿Cree usted que el cómputo en la nube es una tecnología con futuro?</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="p4" value="si" <?php if ($p4=="si") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio1">Si</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="p4" value="no" <?php if ($p4=="no") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio2">No</label>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <p>¿Cree usted que es importante que la FIME enseñe sobre Cloud Computing?</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="p5" value="si" <?php if ($p5=="si") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio1">Si</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="p5" value="no" <?php if ($p5=="no") echo "checked" ?>  disabled>
+                <label class="form-check-label" for="radio2">No</label>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <p>¿Considera que el Cloud Computing juega un papel importante en nuestras vidas, por qué?</p>
+            <div class="mb-3 mt-3">
+                <input type="text" class="form-control" name="p6" value="<?php echo $p6?>" disabled>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <p>¿Cuáles son las ventajas que nos ofrece el cloud computing?</p>
+            <div class="mb-3 mt-3">
+                <input type="text" class="form-control" name="p7" value="<?php echo $p7?>" disabled>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <p>¿que servicios de cloud computing ha utilizado?</p>
+            <div class="mb-3 mt-3">
+                <input type="text" class="form-control" name="p8" value="<?php echo $p8?>" disabled>
+            </div>
+        </div>
+        <a href="encuesta.php" class="btn btn-success">Regresar</a>
+    </div>
+
+    <?php
+        include "partials/footer.php"
+    ?>
+</body>
+</html>

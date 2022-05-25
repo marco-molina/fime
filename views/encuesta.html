@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómputo en la nube</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <?php
+        include "partials/head.php"
+    ?>
+</head>
+<body>
+    <?php
+        include "partials/navbar.php"
+    ?>
+
+    <div class="container my-5 enuesta-container text-light">
+        <h1>Encuesta de cómputo en la nube</h1>
+        <form action="resultados.php" method="post" class="formulario">
+            <div class="mb-3 mt-3">
+                <p>¿Has escuchado del término Cómputo en la nube?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="p1" value="si" required>
+                    <label class="form-check-label" for="radio1">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="p1" value="no" required>
+                    <label class="form-check-label" for="radio2">No</label>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <p>¿Conoce cuáles son los servicios que se ofrecen en Cloud Computing?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="p2" value="si" required>
+                    <label class="form-check-label" for="radio1">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="p2" value="no" required>
+                    <label class="form-check-label" for="radio2">No</label>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <p>¿Ha utilizado algún servicio en la nube?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="p3" value="si" required>
+                    <label class="form-check-label" for="radio1">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="p3" value="no" required>
+                    <label class="form-check-label" for="radio2">No</label>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <p>¿Cree usted que el cómputo en la nube es una tecnología con futuro?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="p4" value="si" required>
+                    <label class="form-check-label" for="radio1">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="p4" value="no" required>
+                    <label class="form-check-label" for="radio2">No</label>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <p>¿Cree usted que es importante que la FIME enseñe sobre Cloud Computing?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="p5" value="si" required>
+                    <label class="form-check-label" for="radio1">Si</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="p5" value="no" required>
+                    <label class="form-check-label" for="radio2">No</label>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <p>¿Considera que el Cloud Computing juega un papel importante en nuestras vidas, por qué?</p>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Escriba aquí..." name="p6" required>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <p>¿Cuáles son las ventajas que nos ofrece el cloud computing?</p>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Escriba aquí..." name="p7" required>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <p>¿que servicios de cloud computing ha utilizado?</p>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Escriba aquí..." name="p8" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <div>
+        <h2>RESPUESTAS DEL SONDEO</h2>
+        <img src="../public/img/encuesta1.png" alt="encuesta1" class="d-block img-thumbnail">
+        <br>
+        <img src="../public/img/encuesta2.png" alt="encuesta2" class="d-block img-thumbnail">
+        <br>
+        <img src="../public/img/encuesta3.png" alt="encuesta3" class="d-block img-thumbnail">
+        <br>
+        <img src="../public/img/encuesta4.png" alt="encuesta4" class="d-block img-thumbnail">
+        <br>
+        <img src="../public/img/encuesta5.png" alt="encuesta5" class="d-block img-thumbnail">
+        <br>
+        <img src="../public/img/encuesta6.png" alt="encuesta6" class="d-block img-thumbnail">
+        <br>
+        <img src="../public/img/encuesta7.png" alt="encuesta7" class="d-block img-thumbnail">
+        <br>
+        <img src="../public/img/encuesta8.png" alt="encuesta8" class="d-block img-thumbnail">
+    </div>
+
+    <?php
+        include "partials/footer.php"
+    ?>
+</body>
+</html>
